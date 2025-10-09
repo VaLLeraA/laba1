@@ -211,7 +211,7 @@ int main(int argc, char *argv[]) {
         }
 
         result[resultPos] = '\0';
-        (*out) << result << '\n';
+        (*out) << result;
     }
 
     dataFile.close();

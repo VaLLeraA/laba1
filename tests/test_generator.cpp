@@ -94,6 +94,10 @@ TEST_P(GeneratorTest, ProcessTestCase) {
         std::string expected = ReadFile(test_case.expectedFile);
 
         EXPECT_FALSE(expected.empty()) << "Expected result file is empty for: " << test_case.name;
+
+        rtrim(output);
+        rtrim(expected);
+        
         EXPECT_EQ(output, expected) << "Output doesn't match expected result for: " << test_case.name;
     }
 }

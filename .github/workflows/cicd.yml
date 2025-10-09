@@ -7,7 +7,7 @@ on:
 jobs:
   tests:
     name: Run Tests
-    uses: VaLLeraA/laba1/.github/workflows/tests.yml@main
+    uses: VaLLeraA/laba1/.github/workflows/tests.yml@master
     with:
       runs-on: itmogus
       platforms: |

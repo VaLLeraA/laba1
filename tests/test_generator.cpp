@@ -18,6 +18,12 @@
 
 namespace fs = std::filesystem;
 
+static void rtrim(std::string& s) {
+    s.erase(std::find_if(s.rbegin(), s.rend(),
+                         [](unsigned char ch) { return !std::isspace(ch); }).base(),
+            s.end());
+}
+
 struct TestCase {
     std::string name;
     std::string templateFile;

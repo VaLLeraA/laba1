@@ -1,0 +1,46 @@
+# === CMake build artifacts ===
+build/
+cmake-build-*/
+CMakeCache.txt
+CMakeFiles/
+Makefile
+cmake_install.cmake
+CTestTestfile.cmake
+install_manifest.txt
+compile_commands.json
+_deps/
+
+# === Executables and object files ===
+*.out
+*.exe
+*.o
+*.obj
+*.a
+*.so
+*.dll
+*.dylib
+*.lib
+
+# === Editor/IDE config ===
+.vscode/
+.idea/
+*.user
+
+# === Temporary / backup files ===
+*.log
+*.tmp
+*.swp
+*.swo
+*~
+*.bak
+
+# === Test outputs ===
+Testing/
+test_results/
+
+# === Ignore data/output if generated ===
+*.dat
+*.txt
+
+# === Ignore generated output files, but keep templates ===
+output.txt

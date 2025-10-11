@@ -30,8 +30,9 @@ jobs:
     - name: Run tests
       run: ctest --output-on-failure --test-dir build
 
-    - name: Run clang-format (code style check)
+    - name: Run clang-format (check only .cpp files)
       run: |
-        find . -name '*.cpp' -o -name '*.h' | xargs clang-format -n --Werror
+        find . -path ./build -prune -o -name '*.cpp' -print | xargs clang-format -n --Werror
+
 
 

@@ -32,7 +32,8 @@ jobs:
 
     - name: Run clang-format (code style check)
       run: |
-        find . -name '*.cpp' -o -name '*.h' | xargs clang-format -n --Werror
+        find . -path ./build -prune -o -name '*.cpp' -print -o -name '*.h' -print | xargs clang-format -n --Werror
+
 
 
 

@@ -21,6 +21,7 @@ add_executable(
 target_link_libraries(
     ${PROJECT_NAME}_tests
     GTest::gtest_main
+    fmt::fmt
 )
 
 target_compile_features(${PROJECT_NAME}_tests PRIVATE cxx_std_23)

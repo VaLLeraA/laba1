@@ -89,4 +89,4 @@ generator --template=template.txt --data=data.dat --output=output.txt
 
 
 
-Максимальное количество баллов - 12
+

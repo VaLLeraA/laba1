@@ -32,7 +32,7 @@ jobs:
 
     - name: Run clang-format (check only .cpp files)
       run: |
-        find . -path ./build -prune -o -name '*.cpp' -print | xargs clang-format -n --Werror
+        find . -name '*.cpp' -o -name '*.h' | xargs clang-format -n --Werror
 
 
 
